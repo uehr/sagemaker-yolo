@@ -1,0 +1,6 @@
+classes=1
+train = ./car/imageList.txt
+valid = ./car/testList.txt
+labels = ./car/obj.names
+backup = backup
+top = 2

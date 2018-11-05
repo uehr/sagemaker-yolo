@@ -1,0 +1,6 @@
+classes=1
+train = /opt/ml/input/data/train/trainList.txt
+valid = /opt/ml/input/data/train/valList.txt
+labels = /opt/ml/input/data/train/obj.names
+backup = /opt/ml/model
+top = 2

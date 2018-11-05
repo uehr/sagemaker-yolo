@@ -1,0 +1,6 @@
+classes=3
+train = ./trains/trainList.txt
+valid = ./trains/valList.txt
+labels = ./trains/obj.names
+backup = backup
+top = 2
