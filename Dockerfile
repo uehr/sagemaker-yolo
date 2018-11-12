@@ -118,9 +118,10 @@ RUN ldconfig
 WORKDIR /tmp
 RUN git clone https://github.com/pjreddie/darknet
 WORKDIR /tmp/darknet
-RUN sed -ie "s/GPU=0/GPU=1/g" Makefile
-RUN sed -ie "s/CUDNN=0/CUDNN=1/g" Makefile
-RUN sed -ie "s/OPENCV=0/OPENCV=1/g" Makefile
+# GPU mode
+# RUN sed -ie "s/GPU=0/GPU=1/g" Makefile
+# RUN sed -ie "s/CUDNN=0/CUDNN=1/g" Makefile
+# RUN sed -ie "s/OPENCV=0/OPENCV=1/g" Makefile
 RUN make
 RUN apt-get update
 RUN apt-get install git -y
